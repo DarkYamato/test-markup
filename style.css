@@ -18,7 +18,7 @@ font-style: normal;
 }
 @font-face {
 font-family: 'Geometria';
-src: url('../kevin/fonts/Geometria.otf');
+src: url('../kevin/fonts/GeometriaBold.otf');
 font-weight: bold;
 font-style: normal;
 }
@@ -36,7 +36,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 120px;
+    min-height: 120px;
     background-color: #fff;
     filter: drop-shadow(0px 2px 3px rgba(0, 37, 67, 0.12));
 }
@@ -46,7 +46,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: auto;
-    height: 24.71px;
+    min-height: 24.71px;
     padding: 0;
     margin: 0 0 0 119px;
     font-family: 'MullerExtraBold';
@@ -84,27 +84,67 @@ body {
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     background: url(../kevin/img/spacey.jpeg) no-repeat -225px 0 #D8D8D8;
     overflow: hidden;
 }
 
 .text-1 {
-    width: 700px;
-    height: 119px;
-    margin: 153px 149px 0px 651px;
+    width: 600px;
+    min-height: 100px;
+    margin: 153px 100px 0px 651px;
     font-family: 'Geometria';
     font-weight: bold;
-    font-size: 44px;
+    font-size: 38px;
     line-height: 40px;
-    text-align: left;
     white-space: pre;
     color: #002543;
 }
 
 .text-2 {
-    width: 700px;
-    height: 119px;
-    margin: 0px 149px 42px 651px;
+    width: 600px;
+    min-height: 119px;
+    margin: 0px 100px 42px 651px;
+    font-family: 'Muller';
+    font-style: regular;
+    font-size: 17px;
+    line-height: 24px;
+    white-space: pre;
+    color: #525252;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    height: 468px;
+    margin: 100px 200px 139px 120px;
+}
+
+.chto {
+    display: flex;
+    justify-content: center;
+    font-family: 'MullerBold';
+    font-weight: lighter;
+    font-size: 36px;
+    line-height: 30px;
+    color: #002543;
+}
+
+.chto-1,
+.chto-2,
+.chto-3 {
+    width: 250px;
+    margin-top: 54px;
+}
+
+h1 {
+    font-family: 'MullerBold';
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
     color: #002543;
 }
