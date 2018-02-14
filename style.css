@@ -118,14 +118,13 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    width: auto;
+    max-width: 1580px;
     height: 468px;
     margin: 100px 200px 139px 120px;
 }
 
 .chto {
-    display: flex;
-    justify-content: center;
+    position: absolute;
     font-family: 'MullerBold';
     font-weight: lighter;
     font-size: 36px;
@@ -138,6 +137,17 @@ body {
 .chto-3 {
     width: 250px;
     margin-top: 54px;
+    font-family: 'Muller';
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    color: #525252;
+}
+
+.chto-1 div,
+.chto-2 div,
+.chto-3 div {
+    margin-bottom: 59px;
 }
 
 h1 {
