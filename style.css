@@ -1,24 +1,24 @@
 @font-face {
 font-family: 'Muller';
-src: url('../kevin/fonts/MullerRegular.woff');
+src: url('../test-markup/fonts/MullerRegular.woff');
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: 'MullerBold';
-src: url('../kevin/fonts/MullerBold.otf');
+src: url('../test-markup/fonts/MullerBold.otf');
 font-weight: bold;
 font-style: normal;
 }
 @font-face {
 font-family: 'MullerExtraBold';
-src: url('../kevin/fonts/MullerExtraBold.otf');
+src: url('../test-markup/fonts/MullerExtraBold.otf');
 font-weight: bold;
 font-style: normal;
 }
 @font-face {
 font-family: 'Geometria';
-src: url('../kevin/fonts/GeometriaBold.otf');
+src: url('../test-markup/fonts/GeometriaBold.otf');
 font-weight: bold;
 font-style: normal;
 }
@@ -85,7 +85,7 @@ body {
     align-items: flex-end;
     width: 100%;
     min-height: 500px;
-    background: url(../kevin/img/spacey.jpeg) no-repeat -225px 0 #D8D8D8;
+    background: url(../test-markup/img/spacey.jpeg) no-repeat -225px 0 #D8D8D8;
     overflow: hidden;
 }
 
@@ -116,18 +116,19 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1580px;
+    max-width: 990px;
     height: 468px;
-    margin: 100px 200px 139px 120px;
+    margin: 90px 190px 139px 190px;
 }
 
 .chto {
     position: absolute;
     font-family: 'MullerBold';
     font-weight: lighter;
-    font-size: 36px;
+    font-size: 31px;
     line-height: 30px;
     color: #002543;
 }
@@ -135,11 +136,12 @@ body {
 .chto-1,
 .chto-2,
 .chto-3 {
-    width: 250px;
-    margin-top: 54px;
+    position: relative;
+    width: 218px;
+    margin-top: 80px;
     font-family: 'Muller';
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 21px;
     text-align: left;
     color: #525252;
 }
@@ -153,8 +155,62 @@ body {
 h1 {
     font-family: 'MullerBold';
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
     text-align: left;
     color: #002543;
+}
+
+.icon {
+    position: absolute;
+    top: 7px;
+    right: 238px;
+    width: 84px;
+    height: 82px;
+    background: url(../test-markup/img/1.svg) no-repeat;
+}
+
+.icon-1 {
+    position: absolute;
+    top: 180px;
+    right: 238px;
+    width: 77px;
+    height: 57px;
+    background: url(../test-markup/img/4.svg) no-repeat;
+}
+
+.icon-2 {
+    position: absolute;
+    top: 12px;
+    right: 244px;
+    width: 53px;
+    height: 72px;
+    background: url(../test-markup/img/2.svg) no-repeat;
+}
+
+.icon-3 {
+    position: absolute;
+    top: 174px;
+    right: 230px;
+    width: 70px;
+    height: 63px;
+    background: url(../test-markup/img/5.svg) no-repeat;
+}
+
+.icon-4 {
+    position: absolute;
+    top: 8px;
+    right: 244px;
+    width: 63px;
+    height: 75px;
+    background: url(../test-markup/img/3.svg) no-repeat;
+}
+
+.icon-5 {
+    position: absolute;
+    top: 172px;
+    right: 236px;
+    width: 74px;
+    height: 72px;
+    background: url(../test-markup/img/6.svg) no-repeat;
 }
