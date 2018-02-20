@@ -288,23 +288,22 @@ input::placeholder {
 }
 
 .checkbox1:checked + .checkbox-custom::before {
-	content: "";
+	content: "✔";
 	display: block;
 	position: absolute;
-	top: 2px;
-	right: 2px;
-	bottom: 2px;
-	left: 2px;
-	background: #413548;
-	border-radius: 2px;
+    font-size: 23px;
+    line-height: 1;
+	color: #09ad7e;
+}
+
+a {
+    text-decoration: none;
+    color: #002543;
 }
 
 .text-decor {
-    color: #000;
-    text-decoration: underline;
-    text-decoration-color: rgba(235, 52, 65, 0.5);
+    border-bottom: 2px solid rgba(235, 52, 65, 0.5);
 }
-
 
 fieldset {
   border: 0;
@@ -315,7 +314,7 @@ fieldset {
 .btn {
     width: 247px;
     height: 37px;
-    margin-left: 276px;
+    margin-left: 275px;
     margin-top: 27px;
     padding-top: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -327,4 +326,97 @@ fieldset {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 108px;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 160px;
+    border-top: 1px solid rgba(0, 37, 67, 0.2);
+}
+
+.contacts-kev {
+    padding: 0;
+    margin-left: 90px;
+    margin-right: 20px;
+    font-family: 'MullerExtraBold';
+    font-size: 20px;
+    line-height: 35px;
+    color: #002543;
+}
+
+.number {
+    white-space: pre-line;
+    margin-left: 45px;
+    line-height: 16px;
+    font-family: 'Muller';
+    font-size: 12px;
+    color: #525252;
+}
+
+.number span {
+    font-family: 'MullerBold';
+    font-weight: lighter;
+    font-size: 14px;
+    color: #002543;
+}
+
+.email {
+    margin-left: 50px;
+    margin-top: -20px;
+    font-family: 'Muller';
+    font-size: 14px;
+    color: #002543;
+    border-bottom: 2px solid rgba(235, 52, 65, 0.5);
+}
+
+.social-btn {
+    display: block;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 80px;
+    margin-top: 18px;
+    font-family: 'Muller';
+    font-size: 12px;
+    line-height: 27px;
+    color: #525252;
+    white-space: pre;
+}
+
+.vk,
+.fb {
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    background: #597DA3;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'MullerBold';
+    font-weight: lighter;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.vk a,
+.fb a {
+    color: #fff;
+}
+
+.fb {
+    background: #3B5998;
+    margin-left: 8px;
+}
+
+.conf {
+    margin-bottom: 30px;
+    font-family: 'Muller';
+    font-size: 14px;
+    color: #002543;
+    border-bottom: 2px solid rgba(235, 52, 65, 0.5);
 }
